@@ -36,19 +36,19 @@ export default function PostAdScreen() {
           </View>
 
           <DropdownPicker
-            label="Category"
             value={category}
             onValueChange={setCategory}
-            placeholder="{{ label: 'Select category', value: '' }}"
             items={[
               { label: 'Electronics', value: 'electronics' },
               { label: 'Fashion', value: 'fashion' },
               { label: 'Furniture', value: 'furniture' },
             ]}
+            label="Category"
+            placeholder='Select category'
+
           />
 
           <DropdownPicker
-            label="Location"
             value={location}
             onValueChange={setLocation}
             items={[
@@ -56,7 +56,9 @@ export default function PostAdScreen() {
               { label: 'Abuja', value: 'abj' },
               { label: 'Port Harcourt', value: 'ph' },
             ]}
-            placeholder="{{ label: 'Select Location', value: '' }}"
+            label="Location"
+            placeholder="Select Location"
+            
           />
           <View style={styles.inputBox}>
           <Text style={styles.label}>Link</Text>
